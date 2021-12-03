@@ -49,9 +49,7 @@ public class CamController : MonoBehaviour
         }
         heightText.text = "Высота: " + Mathf.Round(transform.position.y) + "м";
         speedText.text = "Скорость: " + Mathf.Round(gameObject.GetComponent<Rigidbody>().velocity.magnitude) + "км/ч";
-        if(lose) {
-           
-        }
+        
     }
 
     void OnTriggerEnter(Collider other) {

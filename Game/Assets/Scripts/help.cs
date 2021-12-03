@@ -21,6 +21,11 @@ public class help : MonoBehaviour
     
     }
 
+    public void Skip() {
+        helper.SetActive(false);
+        drone.SetActive(true);
+    }
+
     public void NextPanel() {
             if(currentPanel < panels.Length-1) {
                 panels[currentPanel].SetActive(false);
